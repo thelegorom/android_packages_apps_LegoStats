@@ -278,6 +278,7 @@ public class Utilities {
 	            "qa", "Qatar",
 	            "re", "Reunion (French)",
 	            "ro", "Romania",
+	            "rs", "Serbia",
 	            "ru", "Russian Federation",
 	            "rw", "Rwanda",
 	            "sa", "Saudi Arabia",
