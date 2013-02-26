@@ -21,6 +21,7 @@ import java.math.BigInteger;
 import java.net.NetworkInterface;
 import java.security.MessageDigest;
 import java.util.Locale;
+import java.lang.Object; 
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -34,10 +35,12 @@ import android.os.SystemProperties;
 import android.preference.PreferenceManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.util.Slog;
 
 public class Utilities {
-	public static final String SETTINGS_PREF_NAME = "ROMStats";
-	public static final int NOTIFICATION_ID = 1;
+    public static final String SETTINGS_PREF_NAME = "ROMStats";
+    public static final int NOTIFICATION_ID = 1;
+    String[] isoCountry;
 
 	// For the Unique ID, I still use the IMEI or WiFi MAC address
 	// CyanogenMod switched to use the Settings.Secure.ANDROID_ID
@@ -341,10 +344,15 @@ public class Utilities {
 	            "zr", "Zaire",
 	            "zw", "Zimbabwe",        };
 
+                // try to get country code from phone manager
 		TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
 		String countryCode = tm.getNetworkCountryIso();
 		if (countryCode.equals("")) {
-			countryCode = "Unknown";
+                   // if this failes, use locale that the phone/tablet is set to
+                   countryCode = ctx.getResources().getConfiguration().locale.getCountry().toLowerCase();
+   		   if (countryCode.equals("")) {
+		   	   countryCode = "Unknown";
+		   }
 		}
                 String countryName = countryCode;
 		for (int i = 0; i < world.length; i += 2) {
@@ -352,6 +360,7 @@ public class Utilities {
                       countryName = world[i+1];
                    }
                 }
+Slog.d(Utilities.TAG, "Country: " + countryName);
 		return countryName;
 	}
 
