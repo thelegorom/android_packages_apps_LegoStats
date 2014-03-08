@@ -169,7 +169,7 @@ public class ReportingService extends Service {
 	}
 
 	private void promptUser() {
-		NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+/*		NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
 		Intent mainActivity = new Intent(getApplicationContext(), AnonymousStats.class);
 		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, mainActivity, 0);
@@ -184,7 +184,7 @@ public class ReportingService extends Service {
 				.setAutoCancel(true)
 				.build();
 
-		nm.notify(Utilities.NOTIFICATION_ID, notification);
+		nm.notify(Utilities.NOTIFICATION_ID, notification);*/
 	}
  
 }

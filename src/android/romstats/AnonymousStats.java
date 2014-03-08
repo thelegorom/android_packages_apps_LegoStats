@@ -205,8 +205,8 @@ public class AnonymousStats extends PreferenceActivity implements
 		}
 
 		// Cancel notification on app open, in case it doesn't AutoCancel
-		NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-		nm.cancel(Utilities.NOTIFICATION_ID);
+//		NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//		nm.cancel(Utilities.NOTIFICATION_ID);
 		
 		Utilities.checkIconVisibility(this);
 	}
