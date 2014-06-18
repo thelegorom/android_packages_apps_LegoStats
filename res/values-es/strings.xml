@@ -15,14 +15,14 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Estadísticas de Liquid</string>
-  <string name="main_title">Datos de uso anónimos LiquidSmooth</string>
+  <string name="app_name">Estadísticas de Lego</string>
+  <string name="main_title">Datos de uso anónimos Lego</string>
   <string name="notification_ticker">Estadísticas optado por</string>
-  <string name="notification_title">Estadísticas de Liquid</string>
+  <string name="notification_title">Estadísticas de Lego</string>
   <string name="notification_desc">Habilitar o deshabilitar estadísticas anónimas</string>
   <string name="main_link">&lt; a href = \"http://www.cyanogenmod.org/blog/cmstats-what-it-is-and-why-you-should-opt-in\" &gt; más información &lt; /a &gt;</string>
   <string name="anonymous_statistics_title">Estadísticas de líquido</string>
-  <string name="anonymous_statistics_summary">Ayudar a mejorar al optar en estadísticas anónimas informes LiquidSmooth</string>
+  <string name="anonymous_statistics_summary">Ayudar a mejorar al optar en estadísticas anónimas informes Lego</string>
   <string name="anonymous_statistics_warning_title">Acerca de</string>
   <string name="anonymous_statistics_warning">Permitiendo la recopilación y envío de estadísticas de CyanogenMod, autorizas el envío de información de carácter no personal a los desarrolladores de CyanogenMod para hacer un seguimiento de las instalaciones que realices en los dispositivos. La información enviada incluye un identificador único que no compromete tu privacidad ni tu información personal. Esta información es enviada durante el arranque.\n\nPara ver un ejemplo de la información enviada, pulsa en \u00ABPrevisualizar datos\u00BB.</string>
   <string name="pref_settings">Ajustes</string>
@@ -52,7 +52,7 @@
   <string name="preview_country_title">País</string>
   <string name="preview_carrier_title">Operadora móvil</string>
   <string name="preview_romname_title">Nombre de ROM</string>
-  <string name="preview_romversion_title">Versión de LiquidSmooth</string>
+  <string name="preview_romversion_title">Versión de Lego</string>
   <string name="pref_info">Acerca de &amp; apoyo</string>
   <string name="pref_info_about">Acerca de</string>
   <string name="pref_info_changelog">Registro de cambios</string>
